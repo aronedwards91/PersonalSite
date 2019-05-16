@@ -1,0 +1,17 @@
+.SBMain {
+  height: 100%;
+  width: 25%;
+  float: left;
+  background-color: cornflowerblue;
+}
+.SBMainCollapsed {
+  width: 10%;
+  float: left;
+}
+.SBOverlay {
+  
+}
+.SBBackground {
+  background-color: cornflowerblue;
+  width: 60%;
+}

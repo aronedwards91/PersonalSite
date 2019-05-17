@@ -1,5 +1,7 @@
 :root {
     --main-colour: #00d7c3;
     --bg-colour: #000;
+    --bg-colour-transparent: rgba(0,0,0,.80);
     --sideBar-bg-colour: #4e4c4c;
+    --text-general: #e9fff8;
 }

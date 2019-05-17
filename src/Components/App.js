@@ -7,7 +7,7 @@ import "../css/Vars.css";
 class App extends Component {
   render() {
     return (
-      <div className="Split">
+      <div className="Main">
         <SideBar />
         <LandingPage/>
       </div>

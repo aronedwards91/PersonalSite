@@ -1,17 +1,15 @@
 .SBMain {
   height: 100%;
-  width: 25%;
+  width: 15%;
   float: left;
-  background-color: cornflowerblue;
+  background-color: var(--sideBar-bg-colour);
 }
 .SBMainCollapsed {
   width: 10%;
   float: left;
 }
-.SBOverlay {
-  
-}
 .SBBackground {
+  position: absolute;
   background-color: cornflowerblue;
   width: 60%;
 }

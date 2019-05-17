@@ -1,0 +1,21 @@
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+  color: var(--bg-colour);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.buttonSideBar {
+  margin-left: -15%;
+  width: 115%;
+  background-color: var(--bg-colour); 
+  border: 3px solid var(--main-colour);
+  border-radius: 50px;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  color: var(--main-colour);
+}

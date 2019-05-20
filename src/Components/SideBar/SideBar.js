@@ -1,6 +1,7 @@
 import React from "react";
 import "../../css/SideBar.css";
 import "../../css/Button.css";
+import strings from "../StringImporter";
 
 class SideBar extends React.Component {
   state = {
@@ -10,9 +11,12 @@ class SideBar extends React.Component {
   render() {
     return (
       <div className="SBMain">
-        <div className="SBBackground" />
         <div className="SBOverlay">
-          <div className="SBTitle">TestDel</div>
+          <div className="SBTextBox">
+            <div className="Text SBTitle">{strings.fullName}</div>
+            <div className="Text Bold">{strings.role}</div>
+            <div className="Text Bold">{strings.roleArea}</div>
+          </div>
           <div className="SBButtonsContainer">
             <button className="button buttonSideBar">Summary</button>
             <button className="button buttonSideBar">Skills</button>

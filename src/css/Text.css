@@ -1,0 +1,26 @@
+.Text {
+  color: var(--text-general);
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+}
+
+.SBTitle {
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.Bold {
+  font-weight: 200;
+}
+
+.linedTitle {
+  font-size: 50px;
+  line-height: 44px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}

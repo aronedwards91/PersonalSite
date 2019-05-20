@@ -2,14 +2,11 @@
   height: 100%;
   width: 15%;
   float: left;
-  background-color: var(--sideBar-bg-colour);
 }
 .SBMainCollapsed {
   width: 10%;
   float: left;
 }
-.SBBackground {
-  position: absolute;
-  background-color: cornflowerblue;
-  width: 60%;
+.SBTextBox {
+  padding: 12px;
 }

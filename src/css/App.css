@@ -4,8 +4,10 @@
   float: left;
 }
 
-html, #root{
+html,body,#root{
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .App-header {
@@ -23,5 +25,6 @@ html, #root{
   height: 100%;
   background-image: url("../res/bg.jpg");
   background-repeat: no-repeat;
-  background-size:cover
+  background-size:cover;
+  z-index: -20;
 }

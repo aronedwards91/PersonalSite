@@ -41,3 +41,6 @@
   fill: var(--main-colour);
   padding-left: 6px;
 }
+.rotated180 {
+  transform: rotate(180deg)
+}

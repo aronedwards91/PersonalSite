@@ -54,7 +54,7 @@ class SideBar extends React.Component {
             className="button buttonSideBarToCollapse"
             onClick={this.sidebarCompactHandler}
           >
-            {Icons.arrowLeft}
+            {Icons.arrow("smallIcon" + (isCollapsed ? " rotated180" : ""))}
           </button>
         </div>
       </div>

@@ -3,10 +3,17 @@
   width: 15%;
   float: left;
 }
-.SBMainCollapsed {
-  width: 10%;
-  float: left;
+.SBCollapsed {
+  width: 6%;
 }
 .SBTextBox {
   padding: 12px;
+}
+.SBOverlay {
+  height: 100%;
+  display: grid;
+  grid-template-rows: [row-start] 25% [row1] 40% [row2] 25% [row2] auto [last-line]
+}
+.SBButtonsContainer{
+  vertical-align: -webkit-baseline-middle;
 }

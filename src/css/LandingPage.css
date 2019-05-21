@@ -1,6 +1,6 @@
 .pageSort {
   display: inline-block;
-  width: 85%;
+  position: absolute;
 }
 
 .skillBubbles {

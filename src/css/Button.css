@@ -18,4 +18,26 @@
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   color: var(--main-colour);
+  display: inline;
+}
+
+.buttonSideBarToCollapse {
+  margin-left: -15%;
+  width: 50%;
+  background-color: var(--bg-colour); 
+  border: 3px solid var(--main-colour);
+  border-radius: 50px;
+  color: var(--main-colour);
+}
+.ButtonCollapsed {
+  margin-left: -30%;
+}
+
+.SBButtonText {
+  vertical-align: -webkit-baseline-middle;
+}
+.smallIcon {
+  vertical-align: -webkit-baseline-middle;
+  fill: var(--main-colour);
+  padding-left: 6px;
 }

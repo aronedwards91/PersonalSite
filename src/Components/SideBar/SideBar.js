@@ -2,27 +2,60 @@ import React from "react";
 import "../../css/SideBar.css";
 import "../../css/Button.css";
 import strings from "../StringImporter";
+import Icons from "../../res/icons/icons";
 
 class SideBar extends React.Component {
-  state = {
-    compact: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      compact: false
+    };
+  }
+  
+
+  sidebarCompactHandler = () => {
+    if (this.state.compact) {
+      this.setState({ compact: false });
+    } else {
+      this.setState({ compact: true });
+    }
+  }
 
   render() {
+    let isCollapsed = this.state.compact;
     return (
-      <div className="SBMain">
+      <div className={"SBMain " + (isCollapsed ? "SBCollapsed" : "")} >
         <div className="SBOverlay">
           <div className="SBTextBox">
-            <div className="Text SBTitle">{strings.fullName}</div>
-            <div className="Text Bold">{strings.role}</div>
-            <div className="Text Bold">{strings.roleArea}</div>
+            <div className="Text SBTitle">{isCollapsed ? strings.smallIdentifier : strings.fullName}</div>
+            <div className="Text Bold">{isCollapsed ? "" : strings.role}</div>
+            <div className="Text Bold">{isCollapsed ? "" : strings.roleArea}</div>
           </div>
           <div className="SBButtonsContainer">
-            <button className="button buttonSideBar">Summary</button>
-            <button className="button buttonSideBar">Skills</button>
-            <button className="button buttonSideBar">Experience</button>
-            <button className="button buttonSideBar">Projects</button>
+            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
+              <span className="SBButtonText">{isCollapsed ? "" : "Summary"}</span>
+              {Icons.face}
+            </button>
+            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
+              <span className="SBButtonText">{isCollapsed ? "" : "Skills"}</span>
+              {Icons.timeline}
+            </button>
+            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
+              <span className="SBButtonText">{isCollapsed ? "" : "Experience"}</span>
+              {Icons.city}
+            </button>
+            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
+              <span className="SBButtonText">{isCollapsed ? "" : "Projects"}</span>
+              {Icons.laptop}
+            </button>
           </div>
+          <div className="GridSpacer"/>
+          <button
+            className="button buttonSideBarToCollapse"
+            onClick={this.sidebarCompactHandler}
+          >
+            {Icons.arrowLeft}
+          </button>
         </div>
       </div>
     );

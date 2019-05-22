@@ -1,13 +1,14 @@
 import React from "react";
 import "../../css/LandingPage.css";
 import strings from "../StringImporter";
+import TechIcons from "./TechIcons";
 
 class LandingPage extends React.Component {
   render() {
     return (
       <div className="pageSort">
-        <div className="skillBubbles">Hi</div>
-        <div className="SummaryArea">
+        <TechIcons />
+        <div className="divideArea">
           <div className="SummaryBox">
             <div className="SummaryTitleArea">
               <div className="Text linedTitle">{strings.summaryTitle}</div>

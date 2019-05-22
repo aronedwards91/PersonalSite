@@ -2,18 +2,10 @@
   display: inline-block;
   position: absolute;
 }
-
-.skillBubbles {
+.divideArea {
   width: 50%;
   float: left;
 }
-
-.SummaryArea {
-  width: 50%;
-  float: left;
-
-}
-
 .SummaryBox {
   height: 80%;
   margin-top: 10%;
@@ -23,15 +15,22 @@
   text-align: center;
   background-color: var(--bg-colour-transparent);
 }
-
 .SummaryTitleArea {
   margin: 0;
   padding: 10px 10px 20px 10px;
 }
-
 .SummaryTextArea {
   margin: 0;
   padding: 16px 16px 20px 16px;
   text-align: left;
   white-space: pre-wrap;
+}
+.techIcons {
+  display: block;
+  
+}
+.iconBubble {
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid var(--bg-colour);
 }

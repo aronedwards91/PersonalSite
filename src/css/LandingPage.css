@@ -27,10 +27,44 @@
 }
 .techIcons {
   display: block;
-  
+  position: relative;
 }
 .iconBubble {
   height: 60px;
   border-radius: 50%;
   border: 3px solid var(--bg-colour);
+  position: absolute;
+}
+/*skill placement, ability order*/
+.skill1 {
+  margin-left:15%;
+  margin-top: 10%;
+}
+.skill2 {
+  margin-left: 55%;
+  margin-top: 18%;
+}
+.skill3 {
+  margin-left: 35%;
+  margin-top: 24%;
+}
+.skill4 {
+  margin-left: 75%;
+  margin-top: 32%;
+}
+.skill5 {
+  margin-left: 15%;
+  margin-top: 40%;
+}
+.skill6 {
+  margin-left: 55%;
+  margin-top: 48%;
+}
+.skill7 {
+  margin-left: 35%;
+  margin-top: 56%;
+}
+.skill8 {
+  margin-left: 75%;
+  margin-top: 64%;
 }

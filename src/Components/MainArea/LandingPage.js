@@ -1,5 +1,4 @@
 import React from "react";
-import "../../css/LandingPage.css";
 import strings from "../StringImporter";
 import TechIcons from "./TechIcons";
 

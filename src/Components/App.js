@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import SideBar from "./SideBar/SideBar";
 import LandingPage from "./MainArea/LandingPage";
-import "../css/App.css";
 import "../css/Vars.css";
+import "../css/Button.css";
 import "../css/Text.css";
+import "../css/App.css";
+import "../css/SideBar.css";
+import "../css/LandingPage.css";
+
 
 class App extends Component {
   render() {

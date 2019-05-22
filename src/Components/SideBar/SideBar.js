@@ -1,6 +1,4 @@
 import React from "react";
-import "../../css/SideBar.css";
-import "../../css/Button.css";
 import strings from "../StringImporter";
 import Icons from "../../res/icons/icons";
 

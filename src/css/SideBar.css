@@ -12,8 +12,15 @@
 .SBOverlay {
   height: 100%;
   display: grid;
-  grid-template-rows: [row-start] 25% [row1] 40% [row2] 25% [row2] auto [last-line]
+  grid-template-rows: [row-start] 20% [row1] 20% [row2] 50% [row2] auto [last-line];
 }
 .SBButtonsContainer{
   vertical-align: -webkit-baseline-middle;
+}
+.PictureIcon {
+  width: 60%;
+  border-radius: 50%;
+  border: 2px solid var(--bg-colour);
+  margin-left: 5%;
+  margin-top: 5%;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import strings from "../StringImporter";
 import Icons from "../../res/icons/icons";
+import avatar from "../../res/headsmall.png";
 
 class SideBar extends React.Component {
   constructor(props) {
@@ -24,6 +25,9 @@ class SideBar extends React.Component {
     return (
       <div className={"SBMain " + (isCollapsed ? "SBCollapsed" : "")} >
         <div className="SBOverlay">
+          <div className="PictureIconBox">
+            <img src={avatar} alt="avatar" className="PictureIcon"/>
+          </div>
           <div className="SBTextBox">
             <div className="Text SBTitle">{isCollapsed ? strings.smallIdentifier : strings.fullName}</div>
             <div className="Text Bold">{isCollapsed ? "" : strings.role}</div>

@@ -9,6 +9,7 @@
 .SummaryBox {
   height: 80%;
   margin-top: 10%;
+  margin-right: 5%;
   vertical-align: -webkit-baseline-middle;
   border: 3px solid var(--main-colour);
   border-radius: 50px;

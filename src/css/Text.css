@@ -15,6 +15,10 @@
 .Bold {
   font-weight: 200;
 }
+.BigBold{
+  font-size: 26px;
+  font-weight: 300;
+}
 
 .linedTitle {
   font-size: 50px;

@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router";
 import strings from "../StringImporter";
 import Icons from "../../res/icons/icons";
 import avatar from "../../res/headsmall.png";
@@ -10,7 +11,11 @@ class SideBar extends React.Component {
       compact: false
     };
   }
-  
+
+  sidebarNavHandler = event => {
+    event.persist();
+    this.props.history.push(event.target.innerText.toLowerCase());
+  };
 
   sidebarCompactHandler = () => {
     if (this.state.compact) {
@@ -18,40 +23,64 @@ class SideBar extends React.Component {
     } else {
       this.setState({ compact: true });
     }
-  }
+  };
 
   render() {
     let isCollapsed = this.state.compact;
     return (
-      <div className={"SBMain " + (isCollapsed ? "SBCollapsed" : "")} >
+      <div className={"SBMain " + (isCollapsed ? "SBCollapsed" : "")}>
         <div className="SBOverlay">
           <div className="PictureIconBox">
-            <img src={avatar} alt="avatar" className="PictureIcon"/>
+            <img src={avatar} alt="avatar" className="PictureIcon" />
           </div>
           <div className="SBTextBox">
-            <div className="Text LargeTitle">{isCollapsed ? strings.smallIdentifier : strings.fullName}</div>
+            <div className="Text LargeTitle">
+              {isCollapsed ? strings.smallIdentifier : strings.fullName}
+            </div>
             <div className="Text Bold">{isCollapsed ? "" : strings.role}</div>
-            <div className="Text Bold">{isCollapsed ? "" : strings.roleArea}</div>
+            <div className="Text Bold">
+              {isCollapsed ? "" : strings.roleArea}
+            </div>
           </div>
           <div className="SBButtonsContainer">
-            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
-              <span className="SBButtonText">{isCollapsed ? "" : "Summary"}</span>
+            <button
+              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
+              onClick={event => this.sidebarNavHandler(event)}
+            >
+              <span className="SBButtonText">
+                {isCollapsed ? "" : "Summary"}
+              </span>
               {Icons.face}
             </button>
-            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
-              <span className="SBButtonText">{isCollapsed ? "" : "Skills"}</span>
+            <button
+              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
+              onClick={event => this.sidebarNavHandler(event)}
+            >
+              <span className="SBButtonText">
+                {isCollapsed ? "" : "Skills"}
+              </span>
               {Icons.timeline}
             </button>
-            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
-              <span className="SBButtonText">{isCollapsed ? "" : "Experience"}</span>
+            <button
+              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
+              onClick={event => this.sidebarNavHandler(event)}
+            >
+              <span className="SBButtonText">
+                {isCollapsed ? "" : "Experience"}
+              </span>
               {Icons.city}
             </button>
-            <button className={"button buttonSideBar"+(isCollapsed ? " ButtonCollapsed" : "")}>
-              <span className="SBButtonText">{isCollapsed ? "" : "Projects"}</span>
+            <button
+              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
+              onClick={event => this.sidebarNavHandler(event)}
+            >
+              <span className="SBButtonText">
+                {isCollapsed ? "" : "Projects"}
+              </span>
               {Icons.laptop}
             </button>
           </div>
-          <div className="GridSpacer"/>
+          <div className="GridSpacer" />
           <button
             className="button buttonSideBarToCollapse"
             onClick={this.sidebarCompactHandler}
@@ -64,4 +93,4 @@ class SideBar extends React.Component {
   }
 }
 
-export default SideBar;
+export default withRouter(SideBar);

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SideBar from "./SideBar/SideBar";
 import LandingPage from "./MainArea/LandingPage";
 import SkillsPage from "./MainArea/SkillsPage";
@@ -17,10 +17,10 @@ class App extends Component {
         <div className="Main">
           <SideBar />
           <main>
-            <switch>
+            <Switch>
               <Route path="/" exact component={LandingPage} />
               <Route path="/skills" component={SkillsPage} />
-            </switch>
+            </Switch>
           </main>
         </div>
       </BrowserRouter>

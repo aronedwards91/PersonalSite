@@ -1,10 +1,21 @@
 .SkMain {
     position: relative;
     display: grid;
-    padding: 42px 12px 12px 24px;
+    padding: 12px 42px 12px 42px;
 }
 .SkSkillArea {
     display: inline;
+}
+.SkTitleBox {
+    position: relative;
+    
+    max-width: 300px;
+    border-radius: 30px;
+    border: 5px solid var(--bg-colour);
+    background: var(--bg-colour-transparent);
+    text-align: center;
+    margin: auto;
+    padding: 12px 12px 12px 12px;
 }
 .SkSkillIcon {
     height: 60px;
@@ -19,9 +30,9 @@
     position: relative;
     display: block;
     border-radius: 30px;
-    border: 5px solid var(#e9fff8);
+    border: 5px solid var(--bg-colour);
     background: var(--bg-colour-transparent);
-    text-align: center;
+    text-align: left;
     margin: 6px 6px 6px 40px;
-    padding: 6px 6px 6px 40px;
+    padding: 6px 12px 12px 40px;
 }

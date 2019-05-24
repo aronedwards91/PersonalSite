@@ -29,7 +29,7 @@ class SideBar extends React.Component {
             <img src={avatar} alt="avatar" className="PictureIcon"/>
           </div>
           <div className="SBTextBox">
-            <div className="Text SBTitle">{isCollapsed ? strings.smallIdentifier : strings.fullName}</div>
+            <div className="Text LargeTitle">{isCollapsed ? strings.smallIdentifier : strings.fullName}</div>
             <div className="Text Bold">{isCollapsed ? "" : strings.role}</div>
             <div className="Text Bold">{isCollapsed ? "" : strings.roleArea}</div>
           </div>

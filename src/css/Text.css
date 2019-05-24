@@ -6,14 +6,14 @@
   line-height: 20px;
 }
 
-.SBTitle {
+.LargeTitle {
   font-size: 34px;
   font-weight: 300;
   line-height: 34px;
 }
 
 .Bold {
-  font-weight: 200;
+  font-weight: bold;
 }
 .BigBold{
   font-size: 26px;
@@ -27,4 +27,8 @@
   font-weight: bold;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+}
+
+.spacing {
+  padding-bottom: 6px;
 }

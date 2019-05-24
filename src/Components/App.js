@@ -9,7 +9,7 @@ import "../css/Text.css";
 import "../css/App.css";
 import "../css/SideBar.css";
 import "../css/LandingPage.css";
-import "../../css/TextBubble.css"; //Used in Skills & Experience pages
+import "../css/TextBubble.css"; //Used in Skills & Experience pages
 
 
 class App extends Component {

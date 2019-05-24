@@ -6,12 +6,11 @@ import SkillsPage from "./MainArea/SkillsPage";
 import ExperiencePage from "./MainArea/ExperiencePage";
 import "../css/Vars.css";
 import "../css/Button.css";
-import "../css/Text.css";
 import "../css/App.css";
 import "../css/SideBar.css";
 import "../css/LandingPage.css";
 import "../css/TextBubble.css"; //Used in Skills & Experience pages
-
+import "../css/Text.css";
 
 class App extends Component {
   render() {

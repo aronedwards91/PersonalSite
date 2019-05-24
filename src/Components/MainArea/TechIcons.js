@@ -6,12 +6,13 @@ import githubImg from "../../res/icons/github.png";
 import jsImg from "../../res/icons/js.png";
 import linuxImg from "../../res/icons/linux.png";
 import nodeImg from "../../res/icons/node.png";
+import awsImg from "../../res/icons/aws.png";
 
 class TechIcons extends React.PureComponent {
   render() {
     return (
       <div className="divideArea">
-        <div className="techIconsHeader">
+        <div className="TitleBox marginBigTop">
           <div className="Text Bold" >Skill Ranking</div>
         </div>
 
@@ -23,6 +24,7 @@ class TechIcons extends React.PureComponent {
           <img src={jsImg} alt="Js" className="iconBubble skill1" />
           <img src={linuxImg} alt="Linux" className="iconBubble skill6" />
           <img src={nodeImg} alt="Node" className="iconBubble skill2" />
+          <img src={awsImg} alt="AWS" className="iconBubble skill8" />
         </div>
       </div>
     );

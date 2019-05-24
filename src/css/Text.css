@@ -5,21 +5,18 @@
   font-weight: 100;
   line-height: 20px;
 }
-
 .LargeTitle {
   font-size: 34px;
   font-weight: 300;
   line-height: 34px;
 }
-
 .Bold {
   font-weight: bold;
 }
-.BigBold{
+.BigBold {
   font-size: 26px;
   font-weight: 300;
 }
-
 .linedTitle {
   font-size: 50px;
   line-height: 44px;
@@ -28,7 +25,23 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
-
+.TextBox {
+  position: relative;
+  display: block;
+  border-radius: 30px;
+  border: 5px solid var(--bg-colour);
+  background: var(--bg-colour-transparent);
+  text-align: left;
+  margin: 6px 6px 6px 40px;
+  padding: 6px 12px 12px 40px;
+}
+.smallPadding {
+  margin: 6px 6px 6px 6px;
+  padding: 6px 6px 6px 6px;
+}
 .spacing {
   padding-bottom: 6px;
+}
+.marginBigTop {
+  margin: 42px 6px 6px 40px;
 }

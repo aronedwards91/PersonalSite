@@ -2,7 +2,7 @@
 
 Built this site to showcase my React skills, placing code on Github for availablility.
 
-#Missing Folder
+#Missing Imports
 
-/SafeData has been removed as contains personal data, replace import folder destination in '/src/Components/StringImport.js' to use the GenericData folder instead.
+/SafeData & /res/BusinessIconsPriv has been removed as they contain personal data, delete & uncomment out public versions of data in '/src/Components/StringImporter.js' & '/resImporter.js' to use the GenericData folder instead.
 

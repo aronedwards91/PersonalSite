@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SideBar from "./SideBar/SideBar";
 import LandingPage from "./MainArea/LandingPage";
 import SkillsPage from "./MainArea/SkillsPage";
+import ExperiencePage from "./MainArea/ExperiencePage";
 import "../css/Vars.css";
 import "../css/Button.css";
 import "../css/Text.css";
@@ -23,6 +24,7 @@ class App extends Component {
               <Route path="/" exact component={LandingPage} />
               <Route path="/summary" exact component={LandingPage} />
               <Route path="/skills" component={SkillsPage} />
+              <Route path="/experience" component={ExperiencePage}/>
             </Switch>
           </main>
         </div>

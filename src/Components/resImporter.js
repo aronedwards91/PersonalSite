@@ -1,4 +1,5 @@
 //private Imports - control by delete or commenting out
+import headPic from "../res/headsmallPriv.png";
 import Biz1 from "../res/BusinessIconsPriv/Business1.png";
 import Biz2 from "../res/BusinessIconsPriv/Business2.png";
 import Biz3 from "../res/BusinessIconsPriv/Business3.png";
@@ -7,6 +8,7 @@ import Biz5 from "../res/BusinessIconsPriv/Business5.png";
 import Biz6 from "../res/BusinessIconsPriv/Business6.png";
 //public Imports
 /**
+import headPic from "../res/headsmall.png";
 import Biz1 from "../res/BusinessIcons/Business1.png";
 import Biz2 from "../res/BusinessIcons/Business2.png";
 import Biz3 from "../res/BusinessIcons/Business3.png";
@@ -15,6 +17,7 @@ import Biz5 from "../res/BusinessIcons/Business5.png";
 import Biz6 from "../res/BusinessIcons/Business6.png";
 */
 var res = {
+    head: headPic,
     icons: {
         Business1: Biz1,
         Business2: Biz2,

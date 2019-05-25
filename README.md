@@ -4,5 +4,4 @@ Built this site to showcase my React skills, placing code on Github for availabl
 
 #Missing Imports
 
-/SafeData & /res/BusinessIconsPriv has been removed as they contain personal data, delete & uncomment out public versions of data in '/src/Components/StringImporter.js' & '/resImporter.js' to use the GenericData folder instead.
-
+Imports will be missing from 'src/css/App.css', '/src/Components/StringImporter.js' & '/resImporter.js', to fix delete private import lines & uncomment out public version lines.

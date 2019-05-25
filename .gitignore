@@ -19,3 +19,5 @@ yarn-error.log*
 #Personal info
 /SafeData
 /src/res/BusinessIconsPriv
+/src/res/bgPriv.jpg
+/src/res/headsmallPriv.png

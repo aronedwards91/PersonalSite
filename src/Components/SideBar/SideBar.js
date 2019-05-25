@@ -1,8 +1,9 @@
 import React from "react";
 import { withRouter } from "react-router";
 import strings from "../StringImporter";
+import res from "../resImporter";
 import Icons from "../../res/icons/icons";
-import avatar from "../../res/headsmall.png";
+
 
 class SideBar extends React.Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class SideBar extends React.Component {
         <div className="SBspaceHolder"/>
         <div className="SBOverlay">
           <div className="PictureIconBox">
-            <img src={avatar} alt="avatar" className="PictureIcon" />
+            <img src={res.head} alt="avatar" className="PictureIcon" />
           </div>
           <div className="SBTextBox">
             <div className="Text LargeTitle">

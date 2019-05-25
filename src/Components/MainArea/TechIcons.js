@@ -12,7 +12,7 @@ class TechIcons extends React.PureComponent {
   render() {
     return (
       <div className="divideArea">
-        <div className="TitleBox marginBigTop">
+        <div className="TitleBox">
           <div className="Text Bold">Skill Ranking</div>
         </div>
 

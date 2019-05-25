@@ -1,6 +1,7 @@
 .pageSort {
   display: inline-block;
   position: absolute;
+  padding-top: 2%; 
 }
 .divideArea {
   width: 50%;
@@ -8,8 +9,7 @@
 }
 .SummaryBox {
   height: 80%;
-  margin-top: 10%;
-  margin-right: 5%;
+  margin: 0 5% 10% 0;
   vertical-align: -webkit-baseline-middle;
   border: 3px solid var(--main-colour);
   border-radius: 50px;
@@ -26,6 +26,13 @@
   text-align: left;
   white-space: pre-wrap;
 }
+.linksSection {
+  display: inline-flex;
+}
+.linkBox {
+  display: inline;
+  padding: 0 6px 12px 6px;
+}
 .techIcons {
   display: block;
   position: relative;
@@ -37,7 +44,6 @@
   height: 60px;
   border-radius: 50%;
   border: 3px solid var(--bg-colour);
-  
 }
 /*skill placement, ability order*/
 .skill1 {
@@ -74,7 +80,7 @@
 }
 
 .backLayer {
-  position: absolue;
+  position: absolute;
 }
 hr {
   display: block;

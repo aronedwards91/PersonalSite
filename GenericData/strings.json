@@ -6,6 +6,8 @@
     "roleArea": "stuff",
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vestibulum sollicitudin urna, nec tristique nulla vestibulum nec. Nullam ullamcorper euismod scelerisque. Duis fermentum, sapien nec imperdiet elementum, nisi neque vehicula arcu, in dapibus velit elit non ex. Maecenas vel ultrices lorem, eu fringilla sapien. Sed feugiat arcu non tortor scelerisque posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam bibendum, lacus eget accumsan sodales, risus nunc luctus nisl, a malesuada urna ex eu eros. Cras nec tincidunt eros. Suspendisse congue at tortor a mattis. Proin a dictum risus. Duis sed laoreet turpis. Aenean facilisis lorem non dui fringilla tristique. Integer tincidunt ligula nec molestie mattis. Nam ut lacus eget dui tempor consequat non molestie justo. Aliquam vitae diam at magna bibendum vestibulum. Mauris finibus dapibus nunc nec aliquam.",
     "summaryTitle": "Lorem Ipsum",
+    "link" : "www.google.com",
+    "link2" : "www.yahoo.com",
     "skillTitle": "Vestibulum ante",
     "skill1": "Mauris",
     "skill1Highlights": "Mauris finibus",

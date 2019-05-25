@@ -49,6 +49,18 @@ class TechIcons extends React.PureComponent {
             <img src={awsImg} alt="AWS" className="iconBubble" />
             <div className="Text centreText">AWS</div>
           </div>
+
+          <div className="backLayer" >
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+            <hr/>
+          </div>
         </div>
       </div>
     );

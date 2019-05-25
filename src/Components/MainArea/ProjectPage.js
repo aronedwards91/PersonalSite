@@ -2,6 +2,7 @@ import React from "react";
 import strings from "../StringImporter";
 import res from "../resImporter";
 import "../../css/ProjectBoxPB.css";
+import githubImg from "../../res/icons/github.png";
 
 class ProjectPage extends React.Component {
   render() {
@@ -17,6 +18,14 @@ class ProjectPage extends React.Component {
               {strings.proj1TechStack}
             </div>
             <div className="Text smallPadding">{strings.proj1Summary}</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={strings.link2}
+              className="linkBox"
+            >
+              <img src={githubImg} alt="Github" className="iconBubble" />
+            </a>
           </div>
           <div className="divideBoxImgPB">
             <img src={res.proj.project1} alt="proj1" className="projectImgPB" />
@@ -65,6 +74,14 @@ class ProjectPage extends React.Component {
               {strings.proj5TechStack}
             </div>
             <div className="Text smallPadding">{strings.proj5Summary}</div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={strings.link3}
+              className="linkBox"
+            >
+              <img src={githubImg} alt="Github" className="iconBubble" />
+            </a>
           </div>
           <div className="divideBoxImgPB">
             <img src={res.proj.project5} alt="proj5" className="projectImgPB" />

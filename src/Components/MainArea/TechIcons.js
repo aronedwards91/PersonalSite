@@ -13,18 +13,42 @@ class TechIcons extends React.PureComponent {
     return (
       <div className="divideArea">
         <div className="TitleBox marginBigTop">
-          <div className="Text Bold" >Skill Ranking</div>
+          <div className="Text Bold">Skill Ranking</div>
         </div>
 
         <div className="techIcons">
-          <img src={agileImg} alt="Agile" className="iconBubble skill4" />
-          <img src={expressImg} alt="Express" className="iconBubble skill3" />
-          <img src={fastifyImg} alt="Fastify" className="iconBubble skill7" />
-          <img src={githubImg} alt="Github" className="iconBubble skill5" />
-          <img src={jsImg} alt="Js" className="iconBubble skill1" />
-          <img src={linuxImg} alt="Linux" className="iconBubble skill6" />
-          <img src={nodeImg} alt="Node" className="iconBubble skill2" />
-          <img src={awsImg} alt="AWS" className="iconBubble skill8" />
+          <div className="skillBox skill1">
+            <img src={jsImg} alt="Js" className="iconBubble" />
+            <div className="Text centreText">Javascript</div>
+          </div>
+          <div className="skillBox skill2">
+            <img src={nodeImg} alt="Node" className="iconBubble" />
+            <div className="Text centreText">Node</div>
+          </div>
+          <div className="skillBox skill3">
+            <img src={expressImg} alt="Express" className="iconBubble" />
+            <div className="Text centreText">Express</div>
+          </div>
+          <div className="skillBox skill4">
+            <img src={agileImg} alt="Agile" className="iconBubble" />
+            <div className="Text centreText">Agile</div>
+          </div>
+          <div className="skillBox skill5">
+            <img src={githubImg} alt="Github" className="iconBubble" />
+            <div className="Text centreText">Github</div>
+          </div>
+          <div className="skillBox skill6">
+            <img src={linuxImg} alt="Linux" className="iconBubble" />
+            <div className="Text centreText">Linux</div>
+          </div>
+          <div className="skillBox skill7">
+            <img src={fastifyImg} alt="Fastify" className="iconBubble" />
+            <div className="Text centreText">Fastify</div>
+          </div>
+          <div className="skillBox skill8">
+            <img src={awsImg} alt="AWS" className="iconBubble" />
+            <div className="Text centreText">AWS</div>
+          </div>
         </div>
       </div>
     );

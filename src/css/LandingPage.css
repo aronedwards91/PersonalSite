@@ -30,11 +30,14 @@
   display: block;
   position: relative;
 }
+.skillBox {
+  position: absolute;
+}
 .iconBubble {
   height: 60px;
   border-radius: 50%;
   border: 3px solid var(--bg-colour);
-  position: absolute;
+  
 }
 /*skill placement, ability order*/
 .skill1 {

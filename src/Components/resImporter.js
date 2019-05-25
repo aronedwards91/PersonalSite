@@ -1,5 +1,6 @@
 //private Imports - control by delete or commenting out
 import headPic from "../res/headsmallPriv.png";
+import img404 from "../res/404Priv.png";
 
 import Biz1 from "../res/BusinessIconsPriv/Business1.png";
 import Biz2 from "../res/BusinessIconsPriv/Business2.png";
@@ -18,6 +19,8 @@ import proj6 from "../res/projImgsPriv/proj6.png";
 //public Imports
 /**
 import headPic from "../res/headsmall.png";
+import img404 from "../res/404.png";
+
 import Biz1 from "../res/BusinessIcons/Business1.png";
 import Biz2 from "../res/BusinessIcons/Business2.png";
 import Biz3 from "../res/BusinessIcons/Business3.png";
@@ -31,6 +34,7 @@ import proj3 from "../res/projImgs/proj3.png";
 import proj4 from "../res/projImgs/proj4.png";
 import proj5 from "../res/projImgs/proj5.png";
 import proj6 from "../res/projImgs/proj6.png";
+
 */
 var res = {
     head: headPic,
@@ -49,7 +53,8 @@ var res = {
         project4: proj4,
         project5: proj5,
         project6: proj6
-    }
+    },
+    error404: img404
 }
 
 export default res;

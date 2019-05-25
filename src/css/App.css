@@ -36,3 +36,15 @@ html {
   background-attachment: fixed;
   z-index: -20;
 }
+.errorPage {
+  position: relative;
+  display: grid;
+  padding: 3em 3em 3em 3em;
+}
+.errorImg {
+  padding: 3em 3em 3em 3em;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

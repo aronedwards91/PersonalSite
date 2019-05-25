@@ -4,6 +4,7 @@ import SideBar from "./SideBar/SideBar";
 import LandingPage from "./MainArea/LandingPage";
 import SkillsPage from "./MainArea/SkillsPage";
 import ExperiencePage from "./MainArea/ExperiencePage";
+import ProjectPage from "./MainArea/ProjectPage";
 import "../css/Vars.css";
 import "../css/Button.css";
 import "../css/App.css";
@@ -24,6 +25,7 @@ class App extends Component {
               <Route path="/summary" exact component={LandingPage} />
               <Route path="/skills" component={SkillsPage} />
               <Route path="/experience" component={ExperiencePage}/>
+              <Route path="/projects" component={ProjectPage}/>
             </Switch>
           </main>
         </div>

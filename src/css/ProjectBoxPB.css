@@ -1,0 +1,19 @@
+.PageMainPB {
+    display: grid;
+    padding: 1em 1em 1em 1em;
+}
+.projectBoxPB {
+    margin: 1em 2em 1em 2em;
+    border-radius: 30px;
+    border: 5px solid var(--bg-colour);
+    background: var(--bg-colour-transparent);
+    padding: 12px 12px 12px 12px;
+}
+.divideBoxTextPB {
+    position: relative;
+    max-width: 60%;
+}
+.divideBoxImgPB {
+    position: relative;
+    max-width: 40%;
+}

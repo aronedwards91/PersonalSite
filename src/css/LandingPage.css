@@ -80,7 +80,7 @@
 }
 
 .backLayer {
-  position: absolute;
+  position: initial;
 }
 hr {
   display: block;

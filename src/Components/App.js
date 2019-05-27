@@ -22,6 +22,7 @@ class App extends Component {
     this.state = {
       mobile: false
     };
+    this.manualViewSwitch = this.manualViewSwitch.bind(this);
   }
 
   componentWillMount() {
@@ -30,18 +31,55 @@ class App extends Component {
     }
   }
 
+  manualViewSwitch() {
+    console.log(this.state);
+    if (this.state.mobile) {
+      this.setState({ mobile: false });
+    } else {
+      this.setState({ mobile: true });
+    }
+  }
+
   LandingPageProps = () => {
-    return <LandingPage mobile={this.state.mobile} />;
+    return (
+      <LandingPage mobile={this.state.mobile}>
+        <Footer
+          manualSwitch={this.manualViewSwitch}
+          mobile={this.state.mobile}
+        />
+      </LandingPage>
+    );
   };
   SkillsPageProps = () => {
-    return <SkillsPage mobile={this.state.mobile} />;
+    return (
+      <SkillsPage mobile={this.state.mobile}>
+        <Footer
+          manualSwitch={this.manualViewSwitch}
+          mobile={this.state.mobile}
+        />
+      </SkillsPage>
+    );
   };
   ExperiencePageProps = () => {
-    return <ExperiencePage mobile={this.state.mobile} />;
+    return (
+      <ExperiencePage mobile={this.state.mobile}>
+        <Footer
+          manualSwitch={this.manualViewSwitch}
+          mobile={this.state.mobile}
+        />
+      </ExperiencePage>
+    );
   };
   ProjectPageProps = () => {
-    return <ProjectPage mobile={this.state.mobile} />;
-  }
+    return (
+      <ProjectPage mobile={this.state.mobile}>
+        <Footer
+          manualSwitch={this.manualViewSwitch}
+          mobile={this.state.mobile}
+        />
+      </ProjectPage>
+    );
+  };
 
   tabs = {
     link1: "Summary",
@@ -63,12 +101,11 @@ class App extends Component {
             <Switch>
               <Route path="/" exact render={this.LandingPageProps} />
               <Route path="/summary" exact render={this.LandingPageProps} />
-              <Route path="/skills" render={this.SkillsPageProps}/>
+              <Route path="/skills" render={this.SkillsPageProps} />
               <Route path="/experience" render={this.ExperiencePageProps} />
               <Route path="/projects" render={this.ProjectPageProps} />
               <Route component={Error404Page} />
             </Switch>
-            <Footer/>
           </main>
         </div>
       </BrowserRouter>

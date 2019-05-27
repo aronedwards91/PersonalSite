@@ -34,7 +34,7 @@ class ExperiencePage extends React.Component {
         {this.projectComp(res.icons.Business4, strings.exp4,strings.exp4Highlights,strings.exp4Summary)}
         {this.projectComp(res.icons.Business5, strings.exp5,strings.exp5Highlights,strings.exp5Summary)}
         {this.projectComp(res.icons.Business6, strings.exp6,strings.exp6Highlights,strings.exp6Summary)}
-        
+        {this.props.children}
       </div>
     );
   }

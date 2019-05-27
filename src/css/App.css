@@ -50,8 +50,10 @@ html {
 }
 .footer {
   margin-left: 15%;
+  position: relative;
 }
 .bottomInfoAPP {
   padding: 1em 1em 1em 1em;
   float: right;
+  display: flex;
 }

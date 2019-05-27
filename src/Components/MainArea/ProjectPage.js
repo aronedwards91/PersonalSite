@@ -8,7 +8,7 @@ class ProjectPage extends React.Component {
   imgComp = source => {
     return (
       <div className={this.props.mobile ? "" : "divideBoxImgPB"}>
-        <img src={source} alt="projImg" className="projectImgPB" />
+        <img src={source} alt="projImg" className={this.props.mobile ? "projectImgPB projImgMobPB" : "projectImgPB"} />
       </div>
     );
   };
@@ -89,7 +89,7 @@ class ProjectPage extends React.Component {
           res.proj.project6,
           null
         )}
-        
+        {this.props.children}
       </div>
     );
   }

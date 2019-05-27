@@ -41,7 +41,7 @@ class SkillsPage extends React.Component {
         {this.skillComp(agileImg,strings.skill8,strings.skill8Highlights,strings.skill8Summary)}
         {this.skillComp(githubImg,strings.skill9,strings.skill9Highlights,strings.skill9Summary)}
         {this.skillComp(fastifyImg,strings.skill10,strings.skill10Highlights,strings.skill10Summary)}
-        
+        {this.props.children}
       </div>
     );
   }

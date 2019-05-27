@@ -44,3 +44,13 @@
 .rotated180 {
   transform: rotate(180deg)
 }
+.simpleButton {
+  padding: 0 1em 0 1em;
+  margin-right: 1em;
+  border: 0;
+  cursor: pointer;
+  z-index: 100;
+  background-color: var(--bg-colour); 
+  border: 2px solid var(--main-colour);
+  border-radius: 20px;
+}

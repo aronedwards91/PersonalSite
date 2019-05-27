@@ -7,8 +7,14 @@
   display: grid;
 }
 .mainLP {
-  min-height: 60vmax;
   min-width: 1px;
+}
+.footerHolderLP {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  clear: right;
 }
 .divideArea {
   width: 50%;
@@ -58,7 +64,7 @@
 }
 /*skill placement, ability order*/
 .skill1 {
-  margin-left:15%;
+  margin-left: 15%;
   margin-top: 5%;
 }
 .skill2 {

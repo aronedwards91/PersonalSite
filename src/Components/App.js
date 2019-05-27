@@ -7,6 +7,7 @@ import SkillsPage from "./MainArea/SkillsPage";
 import ExperiencePage from "./MainArea/ExperiencePage";
 import ProjectPage from "./MainArea/ProjectPage";
 import Error404Page from "./Other/Error404";
+import Footer from "./Other/Footer";
 import "../css/Vars.css";
 import "../css/Button.css";
 import "../css/App.css";
@@ -67,6 +68,7 @@ class App extends Component {
               <Route path="/projects" render={this.ProjectPageProps} />
               <Route component={Error404Page} />
             </Switch>
+            <Footer/>
           </main>
         </div>
       </BrowserRouter>

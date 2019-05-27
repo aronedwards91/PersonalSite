@@ -19,7 +19,7 @@ class TechIcons extends React.PureComponent {
   };
   render() {
     return (
-      <div className={this.props.mobile ? "" : "divideArea"}>
+      <div className={this.props.mobile ? "techMarginLP" : "divideArea"}>
         <div className="TitleBox smallPadding">
           <div className="Text Bold">Skill Ranking</div>
         </div>

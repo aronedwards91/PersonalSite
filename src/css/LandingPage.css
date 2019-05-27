@@ -53,7 +53,9 @@
 .techIconsLP {
   display: block;
   position: relative;
-  max-height: 500px;
+}
+.techMarginLP {
+  margin-top: 5%;
 }
 .skillBox {
   position: absolute;

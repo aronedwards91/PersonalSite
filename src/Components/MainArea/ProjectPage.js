@@ -5,100 +5,91 @@ import "../../css/ProjectBoxPB.css";
 import githubImg from "../../res/icons/github.png";
 
 class ProjectPage extends React.Component {
+  imgComp = source => {
+    return (
+      <div className={this.props.mobile ? "" : "divideBoxImgPB"}>
+        <img src={source} alt="projImg" className="projectImgPB" />
+      </div>
+    );
+  };
+
+  projectComp = (titleString, techStackString ,summaryString, imgSource ,gitLink) => {
+    return (
+      <div
+        className={
+          this.props.mobile ? "projectBoxPB boxMobilePB" : "projectBoxPB"
+        }
+      >
+        <div className={this.props.mobile ? "" : "divideBoxTextPB"}>
+          <div className="Text TitleBox">{titleString}</div>
+          {this.props.mobile ? this.imgComp(imgSource) : ""}
+          <div className="Text Bold smallPadding">{techStackString}</div>
+          <div className="Text smallPadding">{summaryString}</div>
+          {gitLink ? <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={gitLink}
+            className="linkBox"
+          >
+            <img src={githubImg} alt="Github" className="iconBubble" />
+          </a> : ""}
+          
+        </div>
+        {this.props.mobile ? "" : this.imgComp(imgSource)}
+      </div>
+    );
+  };
+
   render() {
+    console.log(this.props.mobile);
     return (
       <div className="PageMainPB">
         <div className="TitleBox">
           <div className="Text LargeTitle">{strings.projectsTitle}</div>
         </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj1}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj1TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj1Summary}</div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={strings.link2}
-              className="linkBox"
-            >
-              <img src={githubImg} alt="Github" className="iconBubble" />
-            </a>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project1} alt="proj1" className="projectImgPB" />
-          </div>
-        </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj2}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj2TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj2Summary}</div>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project2} alt="proj2" className="projectImgPB" />
-          </div>
-        </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj3}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj3TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj3Summary}</div>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project3} alt="proj3" className="projectImgPB" />
-          </div>
-        </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj4}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj4TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj4Summary}</div>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project4} alt="proj4" className="projectImgPB" />
-          </div>
-        </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj5}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj5TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj5Summary}</div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={strings.link3}
-              className="linkBox"
-            >
-              <img src={githubImg} alt="Github" className="iconBubble" />
-            </a>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project5} alt="proj5" className="projectImgPB" />
-          </div>
-        </div>
-        <div className="projectBoxPB">
-          <div className="divideBoxTextPB">
-            <div className="Text TitleBox">{strings.proj6}</div>
-            <div className="Text Bold smallPadding">
-              {strings.proj6TechStack}
-            </div>
-            <div className="Text smallPadding">{strings.proj6Summary}</div>
-          </div>
-          <div className="divideBoxImgPB">
-            <img src={res.proj.project6} alt="proj6" className="projectImgPB" />
-          </div>
-        </div>
+        {this.projectComp(
+          strings.proj1,
+          strings.proj1TechStack,
+          strings.proj1Summary,
+          res.proj.project1,
+          strings.link2
+        )}
+        {this.projectComp(
+          strings.proj2,
+          strings.proj2TechStack,
+          strings.proj2Summary,
+          res.proj.project2,
+          null
+        )}
+        {this.projectComp(
+          strings.proj3,
+          strings.proj3TechStack,
+          strings.proj3Summary,
+          res.proj.project3,
+          null
+        )}
+        {this.projectComp(
+          strings.proj4,
+          strings.proj4TechStack,
+          strings.proj4Summary,
+          res.proj.project4,
+          null
+        )}
+        {this.projectComp(
+          strings.proj5,
+          strings.proj5TechStack,
+          strings.proj5Summary,
+          res.proj.project5,
+          strings.link3
+        )}
+        {this.projectComp(
+          strings.proj6,
+          strings.proj6TechStack,
+          strings.proj6Summary,
+          res.proj.project6,
+          null
+        )}
+        
       </div>
     );
   }

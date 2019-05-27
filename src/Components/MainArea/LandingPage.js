@@ -4,7 +4,6 @@ import Summary from "./Summary";
 
 class LandingPage extends React.Component {
   render() {
-    console.log(this.props.mobile);
     return (
       <div>
         <div className={this.props.mobile ? "pageMobileLP" : "pageSort"}>

@@ -23,18 +23,18 @@ class App extends Component {
     };
   }
 
-  componentWillMount(){
-    if(screen.width < 900) {
-      this.setState({mobile: true})
+  componentWillMount() {
+    if (screen.width < 900) {
+      this.setState({ mobile: true });
     }
   }
 
   LandingPageProps = () => {
-    return (
-      <LandingPage
-        mobile={this.state.mobile}
-      />
-    );
+    return <LandingPage mobile={this.state.mobile} />;
+  };
+
+  ProjectPageProps = () => {
+    return <ProjectPage mobile={this.state.mobile} />;
   }
 
   tabs = {
@@ -42,21 +42,25 @@ class App extends Component {
     link2: "Skills",
     link3: "Experience",
     link4: "Projects"
-  }
+  };
 
   render() {
     return (
       <BrowserRouter>
         <div className="Main">
-          {this.state.mobile ? <NavBarMobile tabs={this.tabs}/> : <SideBar tabs={this.tabs}/>}
+          {this.state.mobile ? (
+            <NavBarMobile tabs={this.tabs} />
+          ) : (
+            <SideBar tabs={this.tabs} />
+          )}
           <main>
             <Switch>
               <Route path="/" exact render={this.LandingPageProps} />
               <Route path="/summary" exact render={this.LandingPageProps} />
               <Route path="/skills" component={SkillsPage} />
-              <Route path="/experience" component={ExperiencePage}/>
-              <Route path="/projects" component={ProjectPage}/>
-              <Route component={Error404Page}/>
+              <Route path="/experience" component={ExperiencePage} />
+              <Route path="/projects" render={this.ProjectPageProps} />
+              <Route component={Error404Page} />
             </Switch>
           </main>
         </div>

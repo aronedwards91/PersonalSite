@@ -10,9 +10,17 @@
   padding: 12px 12px 12px 12px;
   display: inline-flex;
 }
+.boxMobilePB {
+  margin: 1em 0.5em 1em 0.5em;
+  padding: 6px 6px 6px 6px;
+  display: block;
+}
 .divideBoxTextPB {
   position: relative;
   max-width: 60%;
+}
+.imgBoxMobilePB {
+  max-height: 100px;
 }
 .divideBoxImgPB {
   position: relative;

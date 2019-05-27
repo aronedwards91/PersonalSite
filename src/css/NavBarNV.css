@@ -3,6 +3,8 @@
 }
 .infoNV {
   display: flex;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 .pictureIconNV {
   height: 70px;

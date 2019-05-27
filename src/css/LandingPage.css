@@ -3,18 +3,25 @@
   position: absolute;
   padding-top: 2%; 
 }
+.pageMobileLP {
+  display: grid;
+}
 .divideArea {
   width: 50%;
   float: left;
 }
-.SummaryBox {
+.summaryBoxLP {
   height: 80%;
-  margin: 0 5% 10% 0;
+  margin: 0 5% 10% 5%;
   vertical-align: -webkit-baseline-middle;
   border: 3px solid var(--main-colour);
   border-radius: 50px;
   text-align: center;
   background-color: var(--bg-colour-transparent);
+}
+.mobileMarginLP {
+  margin: 5% 2% 10% 2%;
+  height: 98%;
 }
 .SummaryTitleArea {
   margin: 0;
@@ -33,7 +40,7 @@
   display: inline;
   padding: 0 6px 12px 6px;
 }
-.techIcons {
+.techIconsLP {
   display: block;
   position: relative;
 }

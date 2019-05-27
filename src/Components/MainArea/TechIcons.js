@@ -11,12 +11,12 @@ import awsImg from "../../res/icons/aws.png";
 class TechIcons extends React.PureComponent {
   render() {
     return (
-      <div className="divideArea">
-        <div className="TitleBox">
+      <div className={this.props.mobile ? "" : "divideArea"}>
+        <div className="TitleBox smallPadding">
           <div className="Text Bold">Skill Ranking</div>
         </div>
 
-        <div className="techIcons">
+        <div className="techIconsLP">
           <div className="skillBox skill1">
             <img src={jsImg} alt="Js" className="iconBubble" />
             <div className="Text centreText">Javascript</div>

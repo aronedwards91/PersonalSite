@@ -16,6 +16,26 @@ import "../css/TextBubble.css"; //Used in Skills & Experience pages
 import "../css/Text.css";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mobile: false
+    };
+  }
+
+  componentWillMount(){
+    if(screen.width < 900) {
+      this.setState({mobile: true})
+    }
+  }
+
+  LandingPageProps = () => {
+    return (
+      <LandingPage
+        mobile={this.state.mobile}
+      />
+    );
+  }
 
   tabs = {
     link1: "Summary",
@@ -25,18 +45,14 @@ class App extends Component {
   }
 
   render() {
-    console.log(screen.width);
-    // width < 900
-    //<NavBarMobile tabs={this.tabs}/>
     return (
       <BrowserRouter>
         <div className="Main">
-        <SideBar tabs={this.tabs}/>
-          
+          {this.state.mobile ? <NavBarMobile tabs={this.tabs}/> : <SideBar tabs={this.tabs}/>}
           <main>
             <Switch>
-              <Route path="/" exact component={LandingPage} />
-              <Route path="/summary" exact component={LandingPage} />
+              <Route path="/" exact render={this.LandingPageProps} />
+              <Route path="/summary" exact render={this.LandingPageProps} />
               <Route path="/skills" component={SkillsPage} />
               <Route path="/experience" component={ExperiencePage}/>
               <Route path="/projects" component={ProjectPage}/>

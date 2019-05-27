@@ -6,8 +6,8 @@ import githubImg from "../../res/icons/github.png";
 class Summary extends React.Component {
   render() {
     return (
-      <div className="divideArea">
-        <div className="SummaryBox">
+      <div className={this.props.mobile ? "" : "divideArea"}>
+        <div className={this.props.mobile ? "summaryBoxLP mobileMarginLP" : "summaryBoxLP"}>
           <div className="SummaryTitleArea">
             <div className="Text linedTitle">{strings.summaryTitle}</div>
           </div>

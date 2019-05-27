@@ -4,10 +4,13 @@ import Summary from "./Summary";
 
 class LandingPage extends React.Component {
   render() {
+    console.log(this.props.mobile);
     return (
-      <div className="pageSort">
-        <TechIcons />
-        <Summary/>
+      <div>
+        <div className={this.props.mobile ? "pageMobileLP" : "pageSort"}>
+          <Summary mobile={this.props.mobile} />
+          <TechIcons mobile={this.props.mobile} />
+        </div>
       </div>
     );
   }

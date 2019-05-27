@@ -1,30 +1,29 @@
-.SBMain {
+.mainSB {
   height: 100%;
   width: 15%;
   float: left;
 }
-.SBCollapsed {
+.collapsedSB {
   width: 6%;
 }
-.SBspaceHolder{
+.spaceHolderSB{
   min-width: 100%;
   min-height: 2px;
 }
-
-.SBTextBox {
-  padding: 12px;
-}
-.SBOverlay {
+.overlaySB {
   height: 100%;
   display: inline-grid;
   grid-template-rows: [row-start] 20% [row1] auto [row2] auto [row2] auto [last-line];
   position: fixed;
   width: inherit;
 }
-.SBButtonsContainer{
+.textBoxSB {
+  padding: 12px;
+}
+.buttonsContainerSB{
   vertical-align: -webkit-baseline-middle;
 }
-.PictureIcon {
+.pictureIconSB {
   width: 60%;
   border-radius: 50%;
   border: 2px solid var(--bg-colour);

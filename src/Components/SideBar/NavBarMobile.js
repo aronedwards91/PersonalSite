@@ -5,7 +5,7 @@ import res from "../resImporter";
 import "../../css/NavBarNV.css";
 
 class NavBarMobile extends React.Component {
-  sidebarNavHandler = link => {
+  navHandler = link => {
     this.props.history.push(link.toLowerCase());
   };
 
@@ -23,19 +23,19 @@ class NavBarMobile extends React.Component {
         <div className="linkBoxesNV">
           <button
             className="linkButtonNV"
-            onClick={() => this.sidebarNavHandler(this.props.tabs.link1)}
+            onClick={() => this.navHandler(this.props.tabs.link1)}
           >{this.props.tabs.link1}</button>
           <button
             className="linkButtonNV"
-            onClick={() => this.sidebarNavHandler(this.props.tabs.link2)}
+            onClick={() => this.navHandler(this.props.tabs.link2)}
           >{this.props.tabs.link2}</button>
           <button
             className="linkButtonNV"
-            onClick={() => this.sidebarNavHandler(this.props.tabs.link3)}
+            onClick={() => this.navHandler(this.props.tabs.link3)}
           >{this.props.tabs.link3}</button>
           <button
             className="linkButtonNV"
-            onClick={() => this.sidebarNavHandler(this.props.tabs.link4)}
+            onClick={() => this.navHandler(this.props.tabs.link4)}
           >{this.props.tabs.link4}</button>
         </div>
       </div>

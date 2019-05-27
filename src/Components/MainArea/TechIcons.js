@@ -9,6 +9,14 @@ import nodeImg from "../../res/icons/node.png";
 import awsImg from "../../res/icons/aws.png";
 
 class TechIcons extends React.PureComponent {
+  skillIcon = (skillCSS, imgSrc, imgText) => {
+    return (
+      <div className={"skillBox " + skillCSS}>
+        <img src={imgSrc} alt={imgText} className="iconBubble" />
+        <div className="Text centreText">{imgText}</div>
+      </div>
+    );
+  };
   render() {
     return (
       <div className={this.props.mobile ? "" : "divideArea"}>
@@ -17,49 +25,24 @@ class TechIcons extends React.PureComponent {
         </div>
 
         <div className="techIconsLP">
-          <div className="skillBox skill1">
-            <img src={jsImg} alt="Js" className="iconBubble" />
-            <div className="Text centreText">Javascript</div>
-          </div>
-          <div className="skillBox skill2">
-            <img src={nodeImg} alt="Node" className="iconBubble" />
-            <div className="Text centreText">Node</div>
-          </div>
-          <div className="skillBox skill3">
-            <img src={expressImg} alt="Express" className="iconBubble" />
-            <div className="Text centreText">Express</div>
-          </div>
-          <div className="skillBox skill4">
-            <img src={agileImg} alt="Agile" className="iconBubble" />
-            <div className="Text centreText">Agile</div>
-          </div>
-          <div className="skillBox skill5">
-            <img src={githubImg} alt="Github" className="iconBubble" />
-            <div className="Text centreText">Github</div>
-          </div>
-          <div className="skillBox skill6">
-            <img src={linuxImg} alt="Linux" className="iconBubble" />
-            <div className="Text centreText">Linux</div>
-          </div>
-          <div className="skillBox skill7">
-            <img src={fastifyImg} alt="Fastify" className="iconBubble" />
-            <div className="Text centreText">Fastify</div>
-          </div>
-          <div className="skillBox skill8">
-            <img src={awsImg} alt="AWS" className="iconBubble" />
-            <div className="Text centreText">AWS</div>
-          </div>
-
-          <div className="backLayer" >
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
-            <hr/>
+          {this.skillIcon("skill1",jsImg,"JavaScript")}
+          {this.skillIcon("skill2",nodeImg,"Node")}
+          {this.skillIcon("skill3",expressImg,"Express")}
+          {this.skillIcon("skill4",agileImg,"Agile")}
+          {this.skillIcon("skill5",githubImg,"Git")}
+          {this.skillIcon("skill6",linuxImg,"Linux")}
+          {this.skillIcon("skill7",fastifyImg,"Fastify")}
+          {this.skillIcon("skill8",awsImg,"AWS")}
+          <div className="backLayer">
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
+            <hr />
           </div>
         </div>
       </div>

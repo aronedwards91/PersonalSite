@@ -12,12 +12,6 @@ class SideBar extends React.Component {
       compact: false
     };
   }
-  tabs = {
-    link1: "Summary",
-    link2: "Skills",
-    link3: "Experience",
-    link4: "Projects"
-  }
 
   sidebarNavHandler = link => {
     this.props.history.push(link.toLowerCase());
@@ -52,37 +46,37 @@ class SideBar extends React.Component {
           <div className="SBButtonsContainer">
             <button
               className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.tabs.link1)}
+              onClick={ () => this.sidebarNavHandler(this.props.tabs.link1)}
             >
               <span className="SBButtonText">
-                {isCollapsed ? "" : this.tabs.link1}
+                {isCollapsed ? "" : this.props.tabs.link1}
               </span>
               {Icons.face}
             </button>
             <button
               className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.tabs.link2)}
+              onClick={ () => this.sidebarNavHandler(this.props.tabs.link2)}
             >
               <span className="SBButtonText">
-                {isCollapsed ? "" : this.tabs.link2}
+                {isCollapsed ? "" : this.props.tabs.link2}
               </span>
               {Icons.timeline}
             </button>
             <button
               className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.tabs.link3)}
+              onClick={ () => this.sidebarNavHandler(this.props.tabs.link3)}
             >
               <span className="SBButtonText">
-                {isCollapsed ? "" : this.tabs.link3}
+                {isCollapsed ? "" : this.props.tabs.link3}
               </span>
               {Icons.city}
             </button>
             <button
               className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.tabs.link4)}
+              onClick={ () => this.sidebarNavHandler(this.props.tabs.link4)}
             >
               <span className="SBButtonText">
-                {isCollapsed ? "" : this.tabs.link4}
+                {isCollapsed ? "" : this.props.tabs.link4}
               </span>
               {Icons.laptop}
             </button>

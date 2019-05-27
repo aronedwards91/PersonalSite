@@ -15,11 +15,21 @@ import "../css/TextBubble.css"; //Used in Skills & Experience pages
 import "../css/Text.css";
 
 class App extends Component {
+
+  tabs = {
+    link1: "Summary",
+    link2: "Skills",
+    link3: "Experience",
+    link4: "Projects"
+  }
+
   render() {
+    console.log(screen.width);
+    // width < 900
     return (
       <BrowserRouter>
         <div className="Main">
-          <SideBar />
+          <SideBar tabs={this.tabs}/>
           <main>
             <Switch>
               <Route path="/" exact component={LandingPage} />

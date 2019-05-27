@@ -36,7 +36,7 @@ class App extends Component {
   SkillsPageProps = () => {
     return <SkillsPage mobile={this.state.mobile} />;
   };
-  ExperiencPageProps = () => {
+  ExperiencePageProps = () => {
     return <ExperiencePage mobile={this.state.mobile} />;
   };
   ProjectPageProps = () => {
@@ -64,7 +64,7 @@ class App extends Component {
               <Route path="/" exact render={this.LandingPageProps} />
               <Route path="/summary" exact render={this.LandingPageProps} />
               <Route path="/skills" render={this.SkillsPageProps}/>
-              <Route path="/experience" render={this.ExperiencPageProps} />
+              <Route path="/experience" render={this.ExperiencePageProps} />
               <Route path="/projects" render={this.ProjectPageProps} />
               <Route component={Error404Page} />
             </Switch>

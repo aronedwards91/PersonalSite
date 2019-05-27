@@ -1,0 +1,32 @@
+.navTopNV {
+  display: inline;
+}
+.infoNV {
+  display: flex;
+}
+.pictureIconNV {
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid var(--bg-colour);
+  margin: 1% 2% 1% 2%;
+}
+.infoTextBoxNV {
+  margin: 2% 1% 2% 1%;
+  vertical-align: -webkit-baseline-middle;
+}
+.linkBoxesNV {
+  background-color: var(--bg-colour-vtransparent);
+  border: 2px solid var(--main-colour);
+  display: flex;
+}
+.linkButtonNV {
+  text-transform: uppercase;
+  font-weight: 300;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: var(--bg-colour);
+  border: 0 solid var(--main-colour);
+  color: var(--main-colour);
+  margin-left: auto;
+  margin-right: auto;
+}

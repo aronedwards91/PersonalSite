@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import SideBar from "./SideBar/SideBar";
+import NavBarMobile from "./SideBar/NavBarMobile";
 import LandingPage from "./MainArea/LandingPage";
 import SkillsPage from "./MainArea/SkillsPage";
 import ExperiencePage from "./MainArea/ExperiencePage";
@@ -26,10 +27,12 @@ class App extends Component {
   render() {
     console.log(screen.width);
     // width < 900
+    //<NavBarMobile tabs={this.tabs}/>
     return (
       <BrowserRouter>
         <div className="Main">
-          <SideBar tabs={this.tabs}/>
+        <SideBar tabs={this.tabs}/>
+          
           <main>
             <Switch>
               <Route path="/" exact component={LandingPage} />

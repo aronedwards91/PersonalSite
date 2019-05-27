@@ -12,95 +12,39 @@ import mongodbImg from "../../res/icons/mongodb.png";
 import reactImg from "../../res/icons/react.png";
 
 class SkillsPage extends React.Component {
-    render() {
-        return (
-            <div className="PageMain">
-                <div className="TitleBox">
-                    <div className="Text LargeTitle">{strings.skillTitle}</div>
-                </div>
-                <div className="TextArea">
-                    <img src={jsImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill1}</div>
-                        <div className="Text Bold spacing">{strings.skill1Highlights}</div>
-                        <div className="Text">{strings.skill1Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={reactImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill2}</div>
-                        <div className="Text Bold spacing">{strings.skill2Highlights}</div>
-                        <div className="Text">{strings.skill2Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={mongodbImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill3}</div>
-                        <div className="Text Bold spacing">{strings.skill3Highlights}</div>
-                        <div className="Text">{strings.skill3Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={expressImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill4}</div>
-                        <div className="Text Bold spacing">{strings.skill4Highlights}</div>
-                        <div className="Text">{strings.skill4Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={nodeImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill5}</div>
-                        <div className="Text Bold spacing">{strings.skill5Highlights}</div>
-                        <div className="Text">{strings.skill5Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={linuxImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill6}</div>
-                        <div className="Text Bold spacing">{strings.skill6Highlights}</div>
-                        <div className="Text">{strings.skill6Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={awsImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill7}</div>
-                        <div className="Text Bold spacing">{strings.skill7Highlights}</div>
-                        <div className="Text">{strings.skill7Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={agileImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill8}</div>
-                        <div className="Text Bold spacing">{strings.skill8Highlights}</div>
-                        <div className="Text">{strings.skill8Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={githubImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill9}</div>
-                        <div className="Text Bold spacing">{strings.skill9Highlights}</div>
-                        <div className="Text">{strings.skill9Summary}</div>
-                    </div>
-                </div>
-                <div className="TextArea">
-                    <img src={fastifyImg} alt="iconPic" className="BubbleIcon"/>
-                    <div className="TextBox">
-                        <div className="Text BigBold spacing">{strings.skill10}</div>
-                        <div className="Text Bold spacing">{strings.skill10Highlights}</div>
-                        <div className="Text">{strings.skill10Summary}</div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+  skillComp = (imgSrc, skillTitle, skillHighlights, skillSummary) => {
+    return (
+      <div className="bubbleArea">
+        <img src={imgSrc} alt="iconPic" className="BubbleIcon" />
+        <div className="TextBox">
+          <div className="Text BigBold spacing">{skillTitle}</div>
+          <div className="Text Bold spacing">{skillHighlights}</div>
+          <div className="Text">{skillSummary}</div>
+        </div>
+      </div>
+    );
+  };
+
+  render() {
+    return (
+      <div className={this.props.mobile ? "PageMain pageMobile" : "PageMain"}>
+        <div className={this.props.mobile ? "TitleBox mobilePaddingTB" : "TitleBox"}>
+          <div className="Text LargeTitle">{strings.skillTitle}</div>
+        </div>
+        {this.skillComp(jsImg,strings.skill1,strings.skill1Highlights,strings.skill1Summary)}
+        {this.skillComp(reactImg,strings.skill2,strings.skill2Highlights,strings.skill2Summary)}
+        {this.skillComp(mongodbImg,strings.skill3,strings.skill3Highlights,strings.skill3Summary)}
+        {this.skillComp(expressImg,strings.skill4,strings.skill4Highlights,strings.skill4Summary)}
+        {this.skillComp(nodeImg,strings.skill5,strings.skill5Highlights,strings.skill5Summary)}
+        {this.skillComp(linuxImg,strings.skill6,strings.skill6Highlights,strings.skill6Summary)}
+        {this.skillComp(awsImg,strings.skill7,strings.skill7Highlights,strings.skill7Summary)}
+        {this.skillComp(agileImg,strings.skill8,strings.skill8Highlights,strings.skill8Summary)}
+        {this.skillComp(githubImg,strings.skill9,strings.skill9Highlights,strings.skill9Summary)}
+        {this.skillComp(fastifyImg,strings.skill10,strings.skill10Highlights,strings.skill10Summary)}
+        
+      </div>
+    );
+  }
 }
 
-export default SkillsPage
+export default SkillsPage;

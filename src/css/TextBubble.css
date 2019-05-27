@@ -3,6 +3,9 @@
     display: grid;
     padding: 12px 42px 12px 42px;
 }
+.pageMobile {
+    padding: 12px 12px 12px 12px;
+}
 .TextArea {
     display: inline;
 }
@@ -14,6 +17,12 @@
     text-align: center;
     margin: auto;
     padding: 12px 42px 12px 42px;
+}
+.mobilePaddingTB {
+    padding: 12px 12px 12px 12px;
+}
+.bubbleArea {
+    display: inline;
 }
 .BubbleIcon {
     height: 60px;

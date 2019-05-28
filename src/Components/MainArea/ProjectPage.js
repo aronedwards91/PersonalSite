@@ -31,7 +31,7 @@ class ProjectPage extends React.Component {
             href={gitLink}
             className="linkBoxLP"
           >
-            <img src={githubImg} alt="Github" className="iconBubble" />
+            <img src={githubImg} alt="Github" className="iconBubbleLP" />
           </a> : ""}
           
         </div>

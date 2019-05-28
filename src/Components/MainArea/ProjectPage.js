@@ -29,7 +29,7 @@ class ProjectPage extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
             href={gitLink}
-            className="linkBox"
+            className="linkBoxLP"
           >
             <img src={githubImg} alt="Github" className="iconBubble" />
           </a> : ""}

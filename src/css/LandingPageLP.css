@@ -16,7 +16,7 @@
   right: 0;
   clear: right;
 }
-.divideArea {
+.divideAreaLP {
   width: 50%;
   float: left;
 }
@@ -33,20 +33,20 @@
   margin: 5% 2% 10% 2%;
   height: 98%;
 }
-.SummaryTitleArea {
+.summaryTitleAreaLP {
   margin: 0;
   padding: 10px 10px 20px 10px;
 }
-.SummaryTextArea {
+.summaryTextAreaLP {
   margin: 0;
   padding: 16px 16px 20px 16px;
   text-align: left;
   white-space: pre-wrap;
 }
-.linksSection {
+.linksSectionLP {
   display: inline-flex;
 }
-.linkBox {
+.linkBoxLP {
   display: inline;
   padding: 0 6px 12px 6px;
 }
@@ -57,49 +57,49 @@
 .techMarginLP {
   margin-top: 5%;
 }
-.skillBox {
+.skillBoxLP {
   position: absolute;
 }
-.iconBubble {
+.iconBubbleLP {
   height: 60px;
   border-radius: 50%;
   border: 3px solid var(--bg-colour);
 }
 /*skill placement, ability order*/
-.skill1 {
+.skill1LP {
   margin-left: 15%;
   margin-top: 5%;
 }
-.skill2 {
+.skill2LP {
   margin-left: 55%;
   margin-top: 12%;
 }
-.skill3 {
+.skill3LP {
   margin-left: 35%;
   margin-top: 24%;
 }
-.skill4 {
+.skill4LP {
   margin-left: 75%;
   margin-top: 32%;
 }
-.skill5 {
+.skill5LP {
   margin-left: 15%;
   margin-top: 40%;
 }
-.skill6 {
+.skill6LP {
   margin-left: 55%;
   margin-top: 48%;
 }
-.skill7 {
+.skill7LP {
   margin-left: 35%;
   margin-top: 54%;
 }
-.skill8 {
+.skill8LP {
   margin-left: 75%;
   margin-top: 58%;
 }
 
-.backLayer {
+.backLayerLP {
   position: initial;
 }
 hr {

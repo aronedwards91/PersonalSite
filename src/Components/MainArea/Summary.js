@@ -6,31 +6,31 @@ import githubImg from "../../res/icons/github.png";
 class Summary extends React.Component {
   render() {
     return (
-      <div className={this.props.mobile ? "" : "divideArea"}>
+      <div className={this.props.mobile ? "" : "divideAreaLP"}>
         <div className={this.props.mobile ? "summaryBoxLP mobileMarginLP" : "summaryBoxLP"}>
-          <div className="SummaryTitleArea">
+          <div className="summaryTitleAreaLP">
             <div className="Text linedTitle">{strings.summaryTitle}</div>
           </div>
-          <div className="SummaryTextArea">
+          <div className="summaryTextAreaLP">
             <div className="Text">{strings.summary}</div>
           </div>
-          <div className="linksSection">
+          <div className="linksSectionLP">
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={strings.link}
-              className="linkBox"
+              className="linkBoxLP"
             >
-              <img src={cvIcon} alt="CV" className="iconBubble" />
+              <img src={cvIcon} alt="CV" className="iconBubbleLP" />
               <div className="Text centreText">CV</div>
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={strings.link2}
-              className="linkBox"
+              className="linkBoxLP"
             >
-              <img src={githubImg} alt="Github" className="iconBubble" />
+              <img src={githubImg} alt="Github" className="iconBubbleLP" />
               <div className="Text centreText">Github</div>
             </a>
           </div>

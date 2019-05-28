@@ -4,7 +4,6 @@ import strings from "../StringImporter";
 import res from "../resImporter";
 import Icons from "../../res/icons/icons";
 
-
 class SideBar extends React.Component {
   constructor(props) {
     super(props);
@@ -25,11 +24,28 @@ class SideBar extends React.Component {
     }
   };
 
+  sidebarBtnComp = (toLink, iconSrc) => {
+    return (
+      <button
+        className={
+          "button buttonSideBar" +
+          (this.state.compact ? " ButtonCollapsed" : "")
+        }
+        onClick={() => this.sidebarNavHandler(toLink)}
+      >
+        <span className="textVertAlign">
+          {this.state.compact ? "" : toLink}
+        </span>
+        {iconSrc}
+      </button>
+    );
+  };
+
   render() {
     let isCollapsed = this.state.compact;
     return (
       <div className={"mainSB " + (isCollapsed ? "collapsedSB" : "")}>
-        <div className="spaceHolderSB"/>
+        <div className="spaceHolderSB" />
         <div className="overlaySB">
           <div>
             <img src={res.head} alt="avatar" className="pictureIconSB" />
@@ -44,49 +60,19 @@ class SideBar extends React.Component {
             </div>
           </div>
           <div className="buttonsContainerSB">
-            <button
-              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.props.tabs.link1)}
-            >
-              <span>
-                {isCollapsed ? "" : this.props.tabs.link1}
-              </span>
-              {Icons.face}
-            </button>
-            <button
-              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.props.tabs.link2)}
-            >
-              <span>
-                {isCollapsed ? "" : this.props.tabs.link2}
-              </span>
-              {Icons.timeline}
-            </button>
-            <button
-              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.props.tabs.link3)}
-            >
-              <span>
-                {isCollapsed ? "" : this.props.tabs.link3}
-              </span>
-              {Icons.city}
-            </button>
-            <button
-              className={"button buttonSideBar" + (isCollapsed ? " ButtonCollapsed" : "")}
-              onClick={ () => this.sidebarNavHandler(this.props.tabs.link4)}
-            >
-              <span>
-                {isCollapsed ? "" : this.props.tabs.link4}
-              </span>
-              {Icons.laptop}
-            </button>
+            {this.sidebarBtnComp(this.props.tabs.link1, Icons.face)}
+            {this.sidebarBtnComp(this.props.tabs.link2, Icons.timeline)}
+            {this.sidebarBtnComp(this.props.tabs.link3, Icons.city)}
+            {this.sidebarBtnComp(this.props.tabs.link4, Icons.laptop)}
           </div>
-          <div/>
+          <div />
           <button
             className="button buttonSideBarToCollapse"
             onClick={this.sidebarCompactHandler}
           >
-            {Icons.arrow("smallIconBtn" + (isCollapsed ? " rotated180Btn" : ""))}
+            {Icons.arrow(
+              "smallIconBtn" + (isCollapsed ? " rotated180Btn" : "")
+            )}
           </button>
         </div>
       </div>

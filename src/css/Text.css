@@ -46,3 +46,6 @@
 .centreText {
   text-align: center;
 }
+.textVertAlign {
+  vertical-align: -webkit-baseline-middle;
+}

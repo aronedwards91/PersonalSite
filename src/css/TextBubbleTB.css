@@ -1,15 +1,15 @@
-.PageMain {
+.pageMainTB {
     position: relative;
     display: grid;
     padding: 12px 42px 12px 42px;
 }
-.pageMobile {
+.pageMobileTB {
     padding: 12px 12px 12px 12px;
 }
-.TextArea {
+.textAreaTB {
     display: inline;
 }
-.TitleBox {
+.titleBoxTB {
     position: relative;
     border-radius: 30px;
     border: 5px solid var(--bg-colour);
@@ -21,10 +21,10 @@
 .mobilePaddingTB {
     padding: 12px 12px 12px 12px;
 }
-.bubbleArea {
+.bubbleAreaTB {
     display: inline;
 }
-.BubbleIcon {
+.bubbleIconTB {
     height: 60px;
     margin-top: 12px;
     border-radius: 50%;

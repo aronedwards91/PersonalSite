@@ -14,8 +14,8 @@ import reactImg from "../../res/icons/react.png";
 class SkillsPage extends React.Component {
   skillComp = (imgSrc, skillTitle, skillHighlights, skillSummary) => {
     return (
-      <div className="bubbleArea">
-        <img src={imgSrc} alt="iconPic" className="BubbleIcon" />
+      <div className="bubbleAreaTB">
+        <img src={imgSrc} alt="iconPic" className="bubbleIconTB" />
         <div className="TextBox">
           <div className="Text BigBold spacing">{skillTitle}</div>
           <div className="Text Bold spacing">{skillHighlights}</div>
@@ -27,8 +27,8 @@ class SkillsPage extends React.Component {
 
   render() {
     return (
-      <div className={this.props.mobile ? "PageMain pageMobile" : "PageMain"}>
-        <div className={this.props.mobile ? "TitleBox mobilePaddingTB" : "TitleBox"}>
+      <div className={this.props.mobile ? "pageMainTB pageMobileTB" : "pageMainTB"}>
+        <div className={this.props.mobile ? "titleBoxTB mobilePaddingTB" : "titleBoxTB"}>
           <div className="Text LargeTitle">{strings.skillTitle}</div>
         </div>
         {this.skillComp(jsImg,strings.skill1,strings.skill1Highlights,strings.skill1Summary)}

@@ -36,15 +36,12 @@
   margin: 6px 6px 6px 40px;
   padding: 6px 12px 12px 40px;
 }
-.smallPadding {
+.smallPaddingText {
   margin: 6px 6px 6px 6px;
   padding: 6px 6px 6px 6px;
 }
-.spacing {
+.spacingText {
   padding-bottom: 6px;
-}
-.marginBigTop {
-  margin: 42px 6px 6px 40px;
 }
 .centreText {
   text-align: center;

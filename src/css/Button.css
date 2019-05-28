@@ -36,12 +36,12 @@
 .SBButtonText {
   vertical-align: -webkit-baseline-middle;
 }
-.smallIcon {
+.smallIconBtn {
   vertical-align: -webkit-baseline-middle;
   fill: var(--main-colour);
   padding-left: 6px;
 }
-.rotated180 {
+.rotated180Btn {
   transform: rotate(180deg)
 }
 .simpleButton {

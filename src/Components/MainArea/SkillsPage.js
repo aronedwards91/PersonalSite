@@ -17,8 +17,8 @@ class SkillsPage extends React.Component {
       <div className="bubbleAreaTB">
         <img src={imgSrc} alt="iconPic" className="bubbleIconTB" />
         <div className="TextBox">
-          <div className="Text BigBold spacing">{skillTitle}</div>
-          <div className="Text Bold spacing">{skillHighlights}</div>
+          <div className="Text BigBold spacingText">{skillTitle}</div>
+          <div className="Text Bold spacingText">{skillHighlights}</div>
           <div className="Text">{skillSummary}</div>
         </div>
       </div>

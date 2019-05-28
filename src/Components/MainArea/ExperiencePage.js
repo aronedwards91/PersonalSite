@@ -8,8 +8,8 @@ class ExperiencePage extends React.Component {
       <div className="textAreaTB">
         <img src={imgSrc} alt="iconPic" className="bubbleIconTB" />
         <div className="TextBox">
-          <div className="Text BigBold spacing">{projTitle}</div>
-          <div className="Text Bold spacing">{projHighlights}</div>
+          <div className="Text BigBold spacingText">{projTitle}</div>
+          <div className="Text Bold spacingText">{projHighlights}</div>
           <div className="Text">{projSummary}</div>
         </div>
       </div>
@@ -22,11 +22,11 @@ class ExperiencePage extends React.Component {
         <div className={this.props.mobile ? "titleBoxTB mobilePaddingTB" : "titleBoxTB"}>
           <div className="Text LargeTitle">{strings.experienceTitle}</div>
         </div>
-        <div className="titleBoxTB smallPadding">
+        <div className="titleBoxTB smallPaddingText">
           <div className="Text Bold">{strings.experienceSub1}</div>
         </div>
         {this.projectComp(res.icons.Business1, strings.exp1,strings.exp1Highlights,strings.exp1Summary)}
-        <div className="titleBoxTB smallPadding">
+        <div className="titleBoxTB smallPaddingText">
           <div className="Text Bold">{strings.experienceSub2}</div>
         </div>
         {this.projectComp(res.icons.Business2, strings.exp2,strings.exp2Highlights,strings.exp2Summary)}

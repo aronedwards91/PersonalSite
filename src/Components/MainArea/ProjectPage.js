@@ -23,8 +23,8 @@ class ProjectPage extends React.Component {
         <div className={this.props.mobile ? "" : "divideBoxTextPB"}>
           <div className="Text TitleBox">{titleString}</div>
           {this.props.mobile ? this.imgComp(imgSource) : ""}
-          <div className="Text Bold smallPadding">{techStackString}</div>
-          <div className="Text smallPadding">{summaryString}</div>
+          <div className="Text Bold smallPaddingText">{techStackString}</div>
+          <div className="Text smallPaddingText">{summaryString}</div>
           {gitLink ? <a
             target="_blank"
             rel="noopener noreferrer"

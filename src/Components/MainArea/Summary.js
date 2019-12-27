@@ -2,6 +2,7 @@ import React from "react";
 import strings from "../StringImporter";
 import cvIcon from "../../res/cvIcon.png";
 import githubImg from "../../res/icons/github.png";
+import linkedinImg from "../../res/icons/linkedin.png";
 
 class Summary extends React.Component {
   render() {
@@ -32,6 +33,15 @@ class Summary extends React.Component {
             >
               <img src={githubImg} alt="Github" className="iconBubbleLP" />
               <div className="Text centreText">Github</div>
+            </a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={strings.link4}
+              className="linkBoxLP"
+            >
+              <img src={linkedinImg} alt="Linkedin" className="iconBubbleLP" />
+              <div className="Text centreText">Linkedin</div>
             </a>
           </div>
         </div>
